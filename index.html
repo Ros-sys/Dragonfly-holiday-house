@@ -1,13 +1,51 @@
-<section id="chi-siamo" style="background-image: url('gilmore_girls_background.jpg'); background-size: cover; background-position: center; padding: 50px; color: white;">
-    <h2>Chi siamo</h2>
-    <p>La Dragon Fly Holiday House è il risultato di un sogno ispirato alla serie TV Gilmore Girls...</p>
-</section>
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dragon Fly Holiday House - Casa Vacanza Stars Hollow</title>
+<style>
+    body {
+        font-family: 'Libre Baskerville', serif;
+        margin: 0;
+        padding: 0;
+        background-color: #FAF3E0;  /* Backup color in caso l'immagine non venga caricata */
+        color: #3B2C35;
+    }
+
+    header {
+        position: relative;
+        background-color: #7B3A2A; /* Questo colore sarà visibile solo se l'immagine non si carica */
+        height: 400px; /* Puoi regolare l'altezza in base alle tue esigenze */
+        text-align: center;
+        color: white;
+    }
+
+    /* Sfondo sfocato */
+    header::before {
+        content: "";
+        background-image: url('gilmore_girls_background.jpg');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.7; /* Cambia l'opacità per renderlo più o meno visibile */
+        filter: blur(8px); /* Aumenta o diminuisci il valore per maggiore o minore sfocatura */
+        z-index: 1;
+    }
+
+    header h1, header p {
+        position: relative;
+        z-index: 2; /* Testo sopra l'immagine sfocata */
+    }
+
+    header h1 {
+        font-size: 48px;
+        margin: 0;
+        padding-top: 100px;
+    }
+
+    header p {
+        font-size: 24px;
+    }
+</style>
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Dragon Fly Holiday House - Casa vacanza ispirata alla serie TV Gilmore Girls. Prenota ora per vivere un'esperienza indimenticabile!">
