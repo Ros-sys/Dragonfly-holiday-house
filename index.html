@@ -1,16 +1,20 @@
 
+    
+
+    header {
+    
     <style>
     body {
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Book Antiqua', 'Georgia', serif; /* Font simile alla sigla di Gilmore Girls */
         margin: 0;
         padding: 0;
-        background-color: #FAF3E0;
+        background-color: #FAF3E0;  /* Colore di sfondo */
         color: #3B2C35;
     }
 
     header {
         position: relative;
-        height: 600px; /* Aumenta l'altezza per far vedere meglio l'immagine */
+        height: 650px; /* Aumenta l'altezza per centrare meglio il logo */
         text-align: center;
         color: white;
         display: flex;
@@ -19,7 +23,7 @@
         overflow: hidden;
     }
 
-    /* Sfondo sfocato */
+    /* Sfondo con minore sfocatura */
     header::before {
         content: "";
         background-image: url('gilmore_girls_background.jpg');
@@ -30,37 +34,36 @@
         left: 0;
         right: 0;
         bottom: 0;
-        opacity: 0.6; /* Cambia l'opacità per migliorare la leggibilità del testo */
-        filter: blur(8px);
+        opacity: 0.7; /* Maggiore visibilità per l'immagine */
+        filter: blur(5px); /* Sfocatura ridotta per rendere più visibile l'immagine */
         z-index: 1;
     }
 
     /* Logo centrato */
     header img.logo {
-        width: 180px; /* Puoi modificare la dimensione del logo */
+        width: 200px; /* Puoi modificare la dimensione del logo */
         height: auto;
         position: relative;
         z-index: 2;
-        margin-bottom: 10px;
+        margin-bottom: 20px; /* Margine per distanziare il logo dal testo */
     }
 
     header h1, header p {
         position: relative;
         z-index: 2;
+        font-family: 'Book Antiqua', 'Georgia', serif; /* Font simile alla sigla di Gilmore Girls */
     }
 
     header h1 {
-        font-size: 48px;
+        font-size: 52px; /* Dimensione del titolo */
         margin: 0;
         padding-top: 100px;
     }
 
     header p {
-        font-size: 24px;
+        font-size: 26px; /* Dimensione del testo descrittivo */
     }
 </style>
-
-    
     
     
     <!-- SEO Meta Tags -->
