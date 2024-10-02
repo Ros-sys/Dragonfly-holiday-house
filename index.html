@@ -1,27 +1,28 @@
-<style>
+
+    <style>
     body {
         font-family: 'Libre Baskerville', serif;
         margin: 0;
         padding: 0;
-        background-color: #FAF3E0;  /* Colore di fallback */
+        background-color: #FAF3E0;
         color: #3B2C35;
     }
 
     header {
         position: relative;
-        height: 400px; /* Altezza dell'header */
+        height: 600px; /* Aumenta l'altezza per far vedere meglio l'immagine */
         text-align: center;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden; /* Evita che il logo o altri elementi escano dall'header */
+        overflow: hidden;
     }
 
     /* Sfondo sfocato */
     header::before {
         content: "";
-        background-image: url('gilmore_girls_background.jpg'); /* Assicurati che il percorso dell'immagine sia corretto */
+        background-image: url('gilmore_girls_background.jpg');
         background-size: cover;
         background-position: center;
         position: absolute;
@@ -29,23 +30,23 @@
         left: 0;
         right: 0;
         bottom: 0;
-        opacity: 0.5; /* Opacità ridotta per una maggiore leggibilità del testo */
-        filter: blur(8px); /* Sfocatura aumentata */
+        opacity: 0.6; /* Cambia l'opacità per migliorare la leggibilità del testo */
+        filter: blur(8px);
         z-index: 1;
     }
 
-    /* Logo centrato e posizionato correttamente */
+    /* Logo centrato */
     header img.logo {
-        width: 150px;
+        width: 180px; /* Puoi modificare la dimensione del logo */
         height: auto;
         position: relative;
         z-index: 2;
-        margin-bottom: 10px; /* Aggiungi margine per distanziare dal testo */
+        margin-bottom: 10px;
     }
 
     header h1, header p {
         position: relative;
-        z-index: 2; /* Testo sopra l'immagine sfocata */
+        z-index: 2;
     }
 
     header h1 {
@@ -58,6 +59,9 @@
         font-size: 24px;
     }
 </style>
+
+    
+    
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Dragon Fly Holiday House - Casa vacanza ispirata alla serie TV Gilmore Girls. Prenota ora per vivere un'esperienza indimenticabile!">
