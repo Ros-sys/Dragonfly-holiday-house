@@ -3,22 +3,25 @@
         font-family: 'Libre Baskerville', serif;
         margin: 0;
         padding: 0;
-        background-color: #FAF3E0;  /* Backup color in caso l'immagine non venga caricata */
+        background-color: #FAF3E0;  /* Colore di fallback */
         color: #3B2C35;
     }
 
     header {
         position: relative;
-        background-color: #7B3A2A; /* Questo colore sarà visibile solo se l'immagine non si carica */
-        height: 400px; /* Puoi regolare l'altezza in base alle tue esigenze */
+        height: 400px; /* Altezza dell'header */
         text-align: center;
         color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Evita che il logo o altri elementi escano dall'header */
     }
 
     /* Sfondo sfocato */
     header::before {
         content: "";
-        background-image: url('gilmore_girls_background.jpg');
+        background-image: url('gilmore_girls_background.jpg'); /* Assicurati che il percorso dell'immagine sia corretto */
         background-size: cover;
         background-position: center;
         position: absolute;
@@ -26,9 +29,18 @@
         left: 0;
         right: 0;
         bottom: 0;
-        opacity: 0.7; /* Cambia l'opacità per renderlo più o meno visibile */
-        filter: blur(8px); /* Aumenta o diminuisci il valore per maggiore o minore sfocatura */
+        opacity: 0.5; /* Opacità ridotta per una maggiore leggibilità del testo */
+        filter: blur(8px); /* Sfocatura aumentata */
         z-index: 1;
+    }
+
+    /* Logo centrato e posizionato correttamente */
+    header img.logo {
+        width: 150px;
+        height: auto;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 10px; /* Aggiungi margine per distanziare dal testo */
     }
 
     header h1, header p {
