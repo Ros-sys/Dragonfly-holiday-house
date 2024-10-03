@@ -33,7 +33,19 @@
         align-items: center;
         overflow: hidden;
     }
+.btn-cta {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradiente autunnale */
+    color: white;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background 0.4s ease;
+}
 
+.btn-cta:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* Inversione del gradiente al passaggio del mouse */
+}
     /* Sfondo con minore sfocatura */
     header::before {
         content: "";
@@ -159,7 +171,24 @@
         button:hover {
             background-color: #7B3A2A;  /* Deep rustic brown */
         }
+        
+.box {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.box:hover {
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
+<style>
+    h1, h2 {
+        font-family: 'Dancing Script', cursive; /* Titoli eleganti */
+    }
+    p {
+        font-family: 'Georgia', serif; /* Paragrafi con font classico */
+    }
+</style>
         /* Social Media Buttons */
         .social-buttons {
             text-align: center;
