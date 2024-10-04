@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dragon Fly Holiday House ispirata a Gilmore Girls">
+    <title>Dragon Fly Holiday House</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4ece0; /* Sfondo pastello */
+            color: #4a3f35; /* Colore del testo autunnale */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Evita lo scrolling orizzontale */
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background-image: url('your_background_image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(2px); /* Effetto sfocato per l'immagine di sfondo */
+            position: relative;
+            height: 400px;
+        }
+
+        h1, h2 {
+            font-family: 'Dancing Script', cursive;
+            color: #8a593e; /* Colore del titolo autunnale */
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Ombre per aggiungere profondità */
+        .box {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .box:hover {
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .parallax {
+            background-image: url('background.jpg');
+            min-height: 500px; 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Bottoni decorativi */
+        .btn-cta {
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradiente autunnale */
+            color: white;
+            border-radius: 50px;
+            padding: 10px 25px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background 0.4s ease;
+        }
+
+        .btn-cta:hover {
+            background: linear-gradient(to right, #feb47b, #ff7e5f);
+        }
+
+        /* Icone personalizzate per i servizi */
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services ul li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .services ul li i {
+            color: #8a593e;
+            margin-right: 10px;
+        }
+
+        /* Effetto foglie autunnali che cadono */
+        .leaf {
+            position: absolute;
+            top: -50px;
+            opacity: 0.8;
+            animation: fall 8s infinite linear;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Benvenuti alla Dragon Fly Holiday House</h1>
+</header>
+
+<!-- Effetto foglie autunnali -->
+<img src="leaf1.png" class="leaf" style="left: 10%; animation-delay: 0s;">
+<img src="leaf2.png" class="leaf" style="left: 50%; animation-delay: 2s;">
+<img src="leaf3.png" class="leaf" style="left: 80%; animation-delay: 4s;">
+
+<main>
+    <section class="services">
+        <h2>Servizi</h2>
+        <ul>
+            <li><i class="fas fa-wifi"></i> Wi-Fi gratuito</li>
+        </ul>
+    </section>
+
+    <section class="galleria">
+        <h2>Galleria</h2>
+        <div class="gallery">
+            <img src="gallery1.jpg" alt="Immagine della Dragon Fly Holiday House" class="box">
+            <img src="gallery2.jpg" alt="Interno della casa vacanza" class="box">
+            <img src="gallery3.jpg" alt="Giardino della casa vacanza" class="box">
+        </div>
+    </section>
+
+    <section class="recensioni">
+        <h2>Recensioni dei nostri ospiti</h2>
+        <div class="recensione box">
+            <p>"Esperienza fantastica! La casa vacanza è meravigliosa e ci ha permesso di staccare dalla vita frenetica. Ritorneremo sicuramente!"</p>
+            <p>- Maria Rossi</p>
+        </div>
+    </section>
+
+    <section class="prenotazioni">
+        <h2>Prenotazioni</h2>
+        <a href="#" class="btn-cta">Prenota ora</a>
+    </section>
+
+    <section class="contatti">
+        <h2>Contatti</h2>
+        <p>Email: <a href="mailto:info@dragonflyholidayhouse.com">info@dragonflyholidayhouse.com</a></p>
+        <p>Telefono: +39 123 456 7890</p>
+    </section>
+</main>
+
+</body>
+</html>
